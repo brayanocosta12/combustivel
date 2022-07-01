@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="brayan">
+   <meta name="robots" content="index, follow">
+   <meta name="keywords" content="combustivel, combustivel, gasolina, app,web, webapp
+   etanol, desenvolvedor,noturno, front,end ">
+<meta name="description" content="webApp desenvolvedor pelo instrutor de ti do senai alex manhado para o curso de frontEnd">
+<link rel="stylesheet" href="estilo.css">
+   
+    <title>combustivel</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>App combustivel</h1>
+        <hr>
+        <h2 id="result"></h2>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <form onsubmit="return false;">
+        <label for="">valor da gasolina</label><br>
+        <label for="">R$</label><br>
+        <input type="text" placeholder="0,00" id="gasolina"><br><br>
+        <label for="">valor do  Etanol</label><br>
+        <label for="">R$</label><br>
+        <input type="text" placeholder="0,00" id="etanol"><br><br>
+        <button onclick="combustivel();" >Calcular</button>
+    </form>
+    </div>
+</main>
+<script src="js/script.js"></script>
+
+
+
+    
+</body>
+</html>
