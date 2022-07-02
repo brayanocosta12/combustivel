@@ -1,20 +1,45 @@
 function combustivel(){
-    var gasolina = document.getElementById('gasoline').value;
+    var gasolina = document.getElementById('gasolina').value;
     var etanol = document.getElementById('etanol').value;
     var result = document.getElementById('result').value;
-    var maisBarato = entanol/gasolibe;
+    var maisBarato = etanol/gasolina;
 
+alert(result); result.innerHTML = 'melhor etanol';
+    gasolina = gasolina.replace(',', '.');
+    etanol = etanol.replace(',', '.');
 
-    gasolina = gasolina.replace(',','.');
-    etanol = etanol.replace(',','.');
+    if (gasolina != '' && etanol != ''){
+
+   
     
     if(maisBarato >= 0.7){
         result.innerHTML = 'melhor abastecer com gasolina';
 
-    }else{
-        result.innerHTML = 'melhor etanol'
     }
 
+    else{
+        result.innerHTML = 'melhor etanol';
+    } 
+    }else{
+    alert('prencha todos os campos');
+    }
+
+
+
+
+
+
+function verificarInput(){
+    var x = Event.key;
+
+    if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' &&
+     letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight')
+
+        alert('caractere invalido');
+        document.getElementById('gasolina').value = '';
+        document.getElementById('etanol').value = '';
+
+}
 
 
 
@@ -61,4 +86,3 @@ function combustivel(){
 
 
 
-//if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' && letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight')

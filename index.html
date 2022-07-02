@@ -18,19 +18,21 @@
     <div class="container">
         <h1>App combustivel</h1>
         <hr>
-        <h2 id="result"></h2>
+        <h2 id="result">@@</h2>
     </div>
 </header>
 <main>
     <div class="container">
         <form onsubmit="return false;">
-        <label for="">valor da gasolina</label><br>
-        <label for="">R$</label><br>
-        <input type="text" placeholder="0,00" id="gasolina"><br><br>
-        <label for="">valor do  Etanol</label><br>
-        <label for="">R$</label><br>
-        <input type="text" placeholder="0,00" id="etanol"><br><br>
-        <button onclick="combustivel();" >Calcular</button>
+            <label >valor da gasolina</label><br>
+            <label >R$</label><br>
+            <input type="text" placeholder="0,00" id="gasolina"
+             onkeydown="verificarInput(Event);"><br><br>
+            <label >valor do  Etanol</label><br>
+            <label >R$</label><br>
+            <input type="text" placeholder="0,07" id="etanol" 
+            onkeydown="verificarInput(Event);"><br><br>
+            <button onclick="combustivel();" >Calcular</button>
     </form>
     </div>
 </main>
