@@ -4,7 +4,7 @@ function combustivel(){
     var result = document.getElementById('result').value;
     var maisBarato = etanol/gasolina;
 
-alert(result); result.innerHTML = 'melhor etanol';
+alert(result);
     gasolina = gasolina.replace(',', '.');
     etanol = etanol.replace(',', '.');
 
