@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+  
+}
+.imagem img {
+ 
+    width: 50%;
+    height: 300px;
+    border-radius: 50px;
+position: absolute;
+left: 25%;
+top: 15%;
+
+}
+form {
+    position: absolute;
+    background-color: rgb(54, 133, 202);
+}
+label{
+    position: absolute;
+    border-radius: 15px;
+}
