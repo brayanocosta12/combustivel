@@ -2,13 +2,14 @@ function combustivel(){
     var gasolina = document.getElementById('gasolina').value;
     var etanol = document.getElementById('etanol').value;
     var result = document.getElementById('result').value;
-    var maisBarato = etanol/gasolina;
+    
 
-
+    gasolina = gasolina.replace(',','.');
+    etanol = etanol.replace(',','.');
 
     if (gasolina != '' && etanol != ''){
 
-   
+        var maisBarato = etanol/gasolina;
     
     if(maisBarato >= 0.7){
         result.innerHTML = 'melhor abastecer com gasolina';
@@ -29,7 +30,9 @@ function combustivel(){
 
 
 function verificarInput(event){
-    var letra = event.key;
+    var letra;
+
+    letra = event.key;
 
     if (letra != 0 &&
         letra != 1 && 
@@ -52,9 +55,8 @@ function verificarInput(event){
         letra != 'ArrowRight')
 
         alert('caractere invalido');
-        document.getElementById('gasolina').value = '';
-        document.getElementById('etanol').value = '';
-
+    document.getElementById('gasolina').value = '';
+    document.getElementById('etanol').value = '';
 }
 
 
